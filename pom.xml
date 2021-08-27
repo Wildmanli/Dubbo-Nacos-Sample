@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.2.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.histo</groupId>
+    <artifactId>dubbo-nacos-demo</artifactId>
+    <packaging>pom</packaging>
+    <version>${revision}</version>
+    <name>dubbo-nacos-demo</name>
+
+    <properties>
+        <revision>1.0.0-SNAPSHOT</revision>
+        <alibaba-nacos.version>2.0.3</alibaba-nacos.version>
+        <alibaba-cloud.version>2.2.6.RELEASE</alibaba-cloud.version>
+        <spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+    </properties>
+    <modules>
+        <module>provider-sample</module>
+        <module>consumer-sample</module>
+        <module>api-sample</module>
+        <module>consumer-feign-sample</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
