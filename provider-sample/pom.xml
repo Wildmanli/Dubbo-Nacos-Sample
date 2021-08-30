@@ -70,6 +70,13 @@
             </exclusions>
         </dependency>
         <!-- Spring Cloud dependencies End -->
+
+        <!-- Spring Security dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <!-- Spring Security dependencies End -->
     </dependencies>
 
     <build>
